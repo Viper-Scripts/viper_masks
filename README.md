@@ -1,4 +1,4 @@
-# mp-masks
+# viper_masks
 FiveM Mask and Hat Script - Credit to LucidKniight
 
 ## Dependencies
@@ -8,8 +8,8 @@ FiveM Mask and Hat Script - Credit to LucidKniight
 # Installation
 
 ## Step 1
-* Drag `mp-masks` into your resources folder or any subfolder
-* Make sure that the folder is named `mp-masks` and NOT `mp-masks-main`
+* Drag `viper_masks` into your resources folder or any subfolder
+* Make sure that the folder is named `viper_masks` and NOT `viper_masks-main`
 
 ## Step 2
 * Add the following line to your **qb-core/shared/items.lua**
@@ -21,7 +21,7 @@ FiveM Mask and Hat Script - Credit to LucidKniight
         stack = false,
         client = {
             image = 'mask.png',
-            export = 'mp-masks.mask'
+            export = 'viper_masks.mask'
         }
     },
 
@@ -32,7 +32,7 @@ FiveM Mask and Hat Script - Credit to LucidKniight
         stack = false,
         client = {
             image = 'hat.png',
-            export = 'mp-masks.hat'
+            export = 'viper_masks.hat'
         }
     },
 ```
@@ -56,7 +56,7 @@ FiveM Mask and Hat Script - Credit to LucidKniight
     title = 'Mask',
     icon = 'masks-theater',
     type = 'client',
-    event = 'lucid-masks:client:ToggleMask',
+    event = 'viper_masks:client:ToggleMask',
     shouldClose = true
 ```
 
