@@ -39,7 +39,7 @@ local function MaskOff(mask, tex)
         anim = { dict = "missfbi4", clip = "takeoff_mask", flag = 49 }
     }) then
         SetPedComponentVariation(cache.ped, 1, 0)
-        TriggerServerEvent("mp-masks:server:GiveMaskItem", mask, tex)
+        TriggerServerEvent("viper_masks:server:GiveMaskItem", mask, tex)
 
         if GetResourceState('illenium-appearance') ~= 'started' then return end
         local appearance = exports['illenium-appearance']:getPedAppearance(cache.ped)

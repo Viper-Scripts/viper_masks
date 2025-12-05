@@ -1,4 +1,4 @@
-RegisterNetEvent('mp-masks:server:GiveMaskItem', function(mask, tex)
+RegisterNetEvent('viper_masks:server:GiveMaskItem', function(mask, tex)
     if mask == 0 then return end
     local src = source
 
@@ -6,7 +6,7 @@ RegisterNetEvent('mp-masks:server:GiveMaskItem', function(mask, tex)
     exports.ox_inventory:AddItem(src, "mask", 1, metadata)
 end)
 
-RegisterNetEvent('mp-masks:server:RemoveMaskItem', function(item)
+RegisterNetEvent('viper_masks:server:RemoveMaskItem', function(item)
     local src = source
     local Player = exports.qbx_core:GetPlayer(src)
 

@@ -43,7 +43,7 @@ local function HatOff(hat, tex)
     }) then
         ClearPedProp(cache.ped, 0)
         SetPedPropIndex(cache.ped, 0, -1, 0, true)
-        TriggerServerEvent("mp-masks:server:GiveHatItem", hat, tex)
+        TriggerServerEvent("viper_masks:server:GiveHatItem", hat, tex)
 
         if GetResourceState('illenium-appearance') ~= 'started' then return end
         local appearance = exports['illenium-appearance']:getPedAppearance(cache.ped)
